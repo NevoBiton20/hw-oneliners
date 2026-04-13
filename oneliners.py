@@ -1,7 +1,6 @@
 if __name__ == '__main__':
     import sys
 
-
     """
     A. Convert the following Java code to one line of Python:
         int[] output = new int[n];
@@ -34,7 +33,7 @@ if __name__ == '__main__':
        Example: v=[1,4,9,16,9,4], n=9, output="!!=!=!"
     """
     v,n = [f(x) for f,x in zip((eval,int),input().split())]
-    output = sum(('=' if x==n else '!' for x in v), '')
+    output = ''.join('=!'[x!=n] for x in v)
     print(output)
 
     """
