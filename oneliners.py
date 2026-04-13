@@ -1,6 +1,7 @@
 if __name__ == '__main__':
     import sys
 
+
     """
     A. Convert the following Java code to one line of Python:
         int[] output = new int[n];
